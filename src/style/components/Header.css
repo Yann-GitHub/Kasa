@@ -1,0 +1,32 @@
+.header {
+  color: #ff6060;
+  padding: 2rem 4%;
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  font-weight: 500;
+}
+
+.logo {
+  max-width: 10rem;
+}
+
+.nav {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.link {
+  color: var(--primary-color);
+  text-decoration: none;
+  padding-left: 2rem;
+}
+
+.active {
+  text-decoration: underline;
+  /* color: var(--primary-color); */
+  /* text-underline-offset: 8px; */
+}
