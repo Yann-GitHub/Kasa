@@ -1,5 +1,5 @@
 // import { Link } from 'react-router-dom'
-import Logo from '../../assets/logo.png'
+import Logo from '../../assets/logo_footer.svg'
 import '../../style/components/Footer.css'
 
 /**
@@ -8,11 +8,11 @@ import '../../style/components/Footer.css'
  * @param {string} text txt qui s'affiche dans la balise P
  * @returns
  */
-function Footer(logo, text) {
+function Footer() {
   return (
     <footer className="footer">
-      <img src={Logo} alt="Logo" />
-      <p>© 2020 Kasa. All rights reserved</p>
+      <img src={Logo} alt="Logo" className="footer-logo" />
+      <p className="footer-txt">© 2020 Kasa. All rights reserved</p>
     </footer>
   )
 }

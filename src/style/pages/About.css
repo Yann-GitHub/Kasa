@@ -1,0 +1,17 @@
+.main-wrapper-about {
+  padding: 0 4%;
+  max-width: 1400px;
+  width: 100%;
+  flex: 1;
+}
+
+.section-infos {
+  width: 100%;
+  padding: 50px;
+  margin-top: 43px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+}

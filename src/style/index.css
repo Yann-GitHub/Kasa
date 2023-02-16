@@ -17,6 +17,7 @@ code {
 
 :root {
   --primary-color: #ff6060;
+  --light-grey: #f6f6f6;
 }
 
 html {
@@ -46,9 +47,9 @@ body {
   align-items: center;
 }
 
-.main-wrapper {
+/* .main-wrapper {
   padding: 0 4%;
   max-width: 1400px;
   width: 100%;
   flex: 1;
-}
+} */
