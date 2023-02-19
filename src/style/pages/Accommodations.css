@@ -1,0 +1,84 @@
+.main-wrapper-accommodations {
+  padding: 0 4%;
+  max-width: 1400px;
+  width: 100%;
+  flex: 1;
+}
+
+.content-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.left-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-content {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+
+.location-content {
+  color: var(--primary-color);
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  margin: 0;
+}
+
+.tags-wrapper {
+  display: flex;
+}
+
+.right-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.host-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.host-name {
+  color: var(--primary-color);
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+  margin-right: 0.4rem;
+  width: min-content;
+  text-align: end;
+}
+
+.host-picture {
+  border-radius: 50%;
+  width: 2.6rem;
+}
+
+.rating-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropdown-wrapper {
+  width: 100%;
+  display: flex;
+  gap: 3.1rem;
+}

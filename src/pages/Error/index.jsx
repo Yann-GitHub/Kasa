@@ -10,7 +10,6 @@ function Error() {
           Oups! La page que vous demandez n'existe pas.
         </h2>
       </div>
-
       <Link to="/" className="error-link">
         Retourner sur la page d'accueil
       </Link>

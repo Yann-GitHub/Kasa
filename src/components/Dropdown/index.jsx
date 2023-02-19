@@ -3,20 +3,37 @@ import ArrowUp from '../../assets/arrow_up.svg'
 import ArrowDown from '../../assets/arrow_down.svg'
 import '../../style/components/Dropdown.css'
 
-function Dropdown({ title, content }) {
+function Dropdown({ title, content, styleSpec }) {
   const [isOpen, setIsOpen] = useState(false)
+  const chooseArrow = isOpen === true ? ArrowUp : ArrowDown
+  console.log(content)
   return (
-    <div className="dropdown">
-      <div className="dropdown-header">
-        <h2 className="dropdown-title">{title}</h2>
+    <div className={`${styleSpec}dropdown`}>
+      <div className={`${styleSpec}dropdown-header`}>
+        <h2 className={`${styleSpec}dropdown-title`}>{title}</h2>
         <img
-          src={isOpen === true ? ArrowUp : ArrowDown}
-          alt="arrow-up"
-          className="dropdown-arrow"
+          src={chooseArrow}
+          alt="arrow"
+          className={`${styleSpec}dropdown-arrow`}
           onClick={() => setIsOpen(!isOpen)}
         />
       </div>
-      {isOpen ? <div className="dropdown-content">{content}</div> : null}
+      {/* {isOpen ? (
+        <div className={`${styleSpec}dropdown-content`}>{content}</div>
+      ) : null} */}
+      {isOpen ? (
+        <div className={`${styleSpec}dropdown-content`}>
+          {typeof content === 'string' ? (
+            content
+          ) : Array.isArray(content) ? (
+            <ul>
+              {content.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+          ) : null}
+        </div>
+      ) : null}
     </div>
   )
 }

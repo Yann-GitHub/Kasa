@@ -1,9 +1,9 @@
-.dropdown {
+.about-dropdown {
   margin-bottom: 31px;
   width: 100%;
 }
 
-.dropdown-header {
+.about-dropdown-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -13,7 +13,7 @@
   overflow: hidden;
 }
 
-.dropdown-title {
+.about-dropdown-title {
   color: white;
   margin: 0;
   /* padding-left: 0.75rem; */
@@ -22,15 +22,61 @@
   font-size: 1rem;
 }
 
-.dropdown-arrow {
+.about-dropdown-arrow {
   padding-right: 1rem;
   cursor: pointer;
 }
 
-.dropdown-content {
+.about-dropdown-content {
   background-color: var(--light-grey);
   color: var(--primary-color);
   padding: 0.75rem;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+}
+
+.accommodation-dropdown {
+  margin-bottom: 31px;
+  width: 100%;
+}
+
+.accommodation-dropdown-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  padding: 0.6rem 0.85rem;
+  overflow: hidden;
+}
+
+.accommodation-dropdown-title {
+  color: white;
+  margin: 0;
+  /* padding-left: 0.75rem; */
+  font-weight: 500;
+  font-style: normal;
+  font-size: 0.75rem;
+}
+
+.accommodation-dropdown-arrow {
+  /* padding-right: 1rem; */
+  cursor: pointer;
+}
+
+.accommodation-dropdown-content {
+  background-color: var(--light-grey);
+  color: var(--primary-color);
+  padding: 1.25rem 0.85rem;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  /* height: 100%; */
+}
+
+.accommodation-dropdown-content ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
