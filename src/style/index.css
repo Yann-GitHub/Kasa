@@ -31,13 +31,17 @@ html {
   box-sizing: inherit;
 }
 
-/* html,
 body {
-  height: 100vh;
-  margin: 0;
-} */
+  min-width: 290px;
+}
 
-/* body {} */
+/* body {
+  max-width: 1440px;
+  min-width: 400px;
+  margin: 0 auto;
+  padding-left: 3vw;
+  padding-right: 3vw;
+} */
 
 #root {
   display: flex;
@@ -47,9 +51,8 @@ body {
   align-items: center;
 }
 
-/* .main-wrapper {
-  padding: 0 4%;
-  max-width: 1400px;
-  width: 100%;
-  flex: 1;
-} */
+@media screen and (max-width: 620px) {
+  html {
+    font-size: 12px;
+  }
+}

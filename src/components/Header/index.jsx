@@ -20,7 +20,7 @@ function Header() {
           to="/about"
           className={({ isActive }) => (isActive ? 'link active' : 'link')}
         >
-          About
+          A propos
         </NavLink>
         {/* <NavLink to="/accommodations" className="link">
           Accommodations

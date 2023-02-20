@@ -30,7 +30,51 @@
 .banner-txt {
   color: white;
   overflow: hidden;
+  font-size: 48px;
   font-weight: 500;
   font-style: normal;
+  padding: 0 2rem;
   z-index: 1;
+}
+
+.text-line-break {
+  display: none;
+}
+
+.banner-container-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 223px;
+  position: relative;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 760px) {
+  .banner-container {
+    border-radius: 10px;
+    height: 111px;
+    font-size: 0.5rem;
+  }
+
+  .banner-container-about {
+    border-radius: 10px;
+  }
+
+  .banner-txt {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .text-line-break {
+    display: initial;
+  }
+
+  .banner-container {
+    height: 111px;
+    justify-content: flex-start;
+  }
 }

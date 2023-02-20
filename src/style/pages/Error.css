@@ -1,10 +1,10 @@
 .main-wrapper-error {
-  padding: 0 4%;
-  max-width: 1400px;
+  max-width: 1340px;
+  padding: 0 50px;
   width: 100%;
   flex: 1;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
@@ -18,7 +18,7 @@
 }
 
 .error-title {
-  font-size: 12rem;
+  font-size: 288px;
   margin: 0;
   color: var(--primary-color);
   margin-top: 5rem;
@@ -35,6 +35,26 @@
 
 .error-link {
   color: var(--primary-color);
-  font-size: O.75rem;
+  font-size: 18px;
   margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .error-title {
+    font-size: 96px;
+  }
+
+  .error-subtitle {
+    font-size: 18px;
+  }
+
+  .error-link {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 938px) {
+  .main-wrapper-error {
+    padding: 0 5%;
+  }
 }

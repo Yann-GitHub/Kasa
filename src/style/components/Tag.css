@@ -1,9 +1,19 @@
 .tag {
   background-color: var(--primary-color);
   color: white;
-  padding: 0.08rem 1.55rem;
+  padding: 0.12rem 1.55rem;
   border-radius: 10px;
   margin-right: 10px;
   font-size: 0.58rem;
   font-weight: 500;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 620px) {
+  .tag {
+    font-size: 10px;
+    border-radius: 5px;
+    padding: 0.4rem 1.55rem;
+    margin-bottom: 5px;
+  }
 }

@@ -7,10 +7,12 @@ function Banner({ page }) {
   return page === 'home' ? (
     <div className="banner-container">
       <img className="banner-img" src={ImgHome} alt="home" />
-      <h1 className="banner-txt">Chez vous, partout et ailleurs</h1>
+      <h1 className="banner-txt">
+        Chez vous,<br className="text-line-break"></br> partout et ailleurs
+      </h1>
     </div>
   ) : (
-    <div className="banner-container">
+    <div className="banner-container-about">
       <img className="banner-img" src={ImgAbout} alt="about" />
     </div>
   )

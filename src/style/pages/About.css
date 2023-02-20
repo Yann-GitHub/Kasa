@@ -1,6 +1,6 @@
 .main-wrapper-about {
-  padding: 0 4%;
-  max-width: 1400px;
+  max-width: 1340px;
+  padding: 0 50px;
   width: 100%;
   flex: 1;
 }
@@ -14,4 +14,20 @@
   justify-content: center;
   align-items: center;
   border-radius: 25px;
+}
+
+@media screen and (max-width: 620px) {
+  .text-line-break {
+    display: initial;
+  }
+
+  .section-infos {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 938px) {
+  .main-wrapper-about {
+    padding: 0 5%;
+  }
 }

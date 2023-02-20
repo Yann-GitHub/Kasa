@@ -1,6 +1,6 @@
 .main-wrapper-accommodations {
-  padding: 0 4%;
-  max-width: 1400px;
+  max-width: 1340px;
+  padding: 0 50px;
   width: 100%;
   flex: 1;
 }
@@ -17,6 +17,7 @@
 .left-content {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .title-content {
@@ -34,12 +35,13 @@
   font-weight: 500;
   padding: 0;
   padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
+  padding-bottom: 0.72rem;
   margin: 0;
 }
 
 .tags-wrapper {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .right-content {
@@ -81,4 +83,61 @@
   width: 100%;
   display: flex;
   gap: 3.1rem;
+}
+
+@media screen and (max-width: 480px) {
+  .host-wrapper {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 938px) {
+  .main-wrapper-accommodations {
+    padding: 0 5%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .dropdown-wrapper {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .title-content {
+    font-size: 1.2rem;
+  }
+
+  .dropdown-wrapper {
+    flex-direction: column;
+  }
+
+  .right-content {
+    width: 100%;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.2rem;
+  }
+
+  .host-wrapper {
+    margin: 0;
+    margin-top: 12px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .host-name {
+    font-size: 12px;
+  }
+
+  .title-content {
+    font-size: 18px;
+  }
+  .location-content {
+    font-size: 14px;
+  }
+  .dropdown-wrapper {
+    flex-direction: column;
+    gap: 0;
+  }
 }

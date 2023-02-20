@@ -2,12 +2,6 @@
 import Logo from '../../assets/logo_footer.svg'
 import '../../style/components/Footer.css'
 
-/**
- * Cette fonction affiche le router
- * @param {string} logo
- * @param {string} text txt qui s'affiche dans la balise P
- * @returns
- */
 function Footer() {
   return (
     <footer className="footer">

@@ -2,7 +2,6 @@
   width: 100%;
   height: 415px;
   border-radius: 25px;
-  /* background-color: violet; */
   overflow: hidden;
   position: relative;
   display: flex;
@@ -18,7 +17,6 @@
   object-fit: cover;
   width: 100%;
   height: 100%;
-  z-index: -1;
 }
 
 .carrousel-arrows-wrapper {
@@ -27,6 +25,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: absolute;
 }
 
 .carrousel-arrow-right {
@@ -42,4 +41,19 @@
 .carrousel-counter {
   color: white;
   margin-bottom: 1rem;
+  position: absolute;
+  bottom: 0;
+}
+
+@media screen and (max-width: 620px) {
+  .carrousel {
+    height: 255px;
+    border-radius: 10px;
+  }
+  .carrousel-arrow-right {
+    width: 10px;
+  }
+  .carrousel-arrow-left {
+    width: 10px;
+  }
 }

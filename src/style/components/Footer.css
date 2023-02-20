@@ -12,9 +12,10 @@
 }
 
 .footer-logo {
-  width: 6rem;
+  width: 130px;
 }
 
 .footer-txt {
   color: white;
+  font-size: 1rem;
 }
