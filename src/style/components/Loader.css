@@ -1,6 +1,7 @@
 .loader {
-  padding: 10px;
-  border: 6px solid black;
+  margin: auto auto;
+  padding: 30px;
+  border: 6px solid rgba(0, 0, 0, 0.2);
   border-bottom-color: transparent;
   border-radius: 50%;
   animation: spin 1s infinite linear;
