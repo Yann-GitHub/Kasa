@@ -5,7 +5,7 @@ import ArrowRight from '../../assets/arrow_right.svg'
 
 function Carrousel({ data, title }) {
   const [pictureIndex, setImgIndex] = useState(0)
-  console.log(data.length)
+  // console.log(data.length)
 
   function handleClickPrevious() {
     setImgIndex(pictureIndex === 0 ? data.length - 1 : pictureIndex - 1)
@@ -19,6 +19,7 @@ function Carrousel({ data, title }) {
   return (
     <div className="carrousel">
       <img src={data[pictureIndex]} alt={title} className="carrousel-img" />
+      {/*Conditional display of arrows and pagination depending of data length */}
       {data.length > 1 ? (
         <>
           <div className="carrousel-arrows-wrapper">

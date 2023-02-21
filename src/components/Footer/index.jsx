@@ -1,4 +1,3 @@
-// import { Link } from 'react-router-dom'
 import Logo from '../../assets/logo_footer.svg'
 import '../../style/components/Footer.css'
 

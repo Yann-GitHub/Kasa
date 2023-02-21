@@ -4,7 +4,7 @@ function Tag({ value }) {
   return (
     <>
       {value.map((tag) => (
-        <span key="tag" className="tag">
+        <span key={tag} className="tag">
           {tag}
         </span>
       ))}

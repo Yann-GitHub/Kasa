@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom'
+import { useParams, Navigate } from 'react-router-dom'
 import AccommodationsData from '../../data/logements.json'
 import Carrousel from '../../components/Carrousel'
 import Tag from '../../components/Tag'
@@ -12,6 +12,12 @@ function Accommodations() {
   const accommodation = AccommodationsData.find(
     (data) => data.id === accommodationId
   )
+
+  //If there is no accommodation with the ID in the parameters, the user will be redirected to an error page
+  if (!accommodation) {
+    return <Navigate to="/error" />
+  }
+
   const {
     // id,
     title,
@@ -24,7 +30,7 @@ function Accommodations() {
     tags,
   } = accommodation
 
-  console.log(equipments)
+  // console.log(equipments)
 
   return (
     <div className="main-wrapper-accommodations">

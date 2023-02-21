@@ -22,9 +22,6 @@ function Header() {
         >
           A propos
         </NavLink>
-        {/* <NavLink to="/accommodations" className="link">
-          Accommodations
-        </NavLink> */}
       </nav>
     </header>
   )

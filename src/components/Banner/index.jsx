@@ -3,7 +3,7 @@ import ImgHome from '../../assets/img_home.jpg'
 import '../../style/components/Banner.css'
 
 function Banner({ page }) {
-  // const page = props.page
+  // Displays a banner image and text that varies based on the 'page' prop.
   return page === 'home' ? (
     <div className="banner-container">
       <img className="banner-img" src={ImgHome} alt="home" />
